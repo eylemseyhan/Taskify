@@ -1,4 +1,4 @@
-**### Taskify**
+**## Taskify**
 _Taskify, kullanıcıların görevleri yönetmesine ve takip etmesine yardımcı olan bir görev yönetim uygulamasıdır. Bu uygulama, kullanıcıların görev eklemelerini, düzenlemelerini, silmelerini ve görevleri listelemelerini sağlar. Ayrıca, her görev için atanmış kullanıcıları, tarih aralığını ve alt görevleri yönetmek mümkündür._
 
 ![Ekran görüntüsü 2024-06-27 121329](https://github.com/eylemseyhan/Taskify/assets/99998017/a05a55a5-110f-4e5c-955c-46679e760997)
