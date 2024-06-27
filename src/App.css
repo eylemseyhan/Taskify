@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+/* Genel ayarlar */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  height: 100%;
+  background: linear-gradient(135deg, #E7D37F 0%, #81A263 100%); 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, #root {
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ant-layout {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #E7D37F 0%, #81A263 100%);
+  
 }
 
-.App-link {
-  color: #61dafb;
+
+.ant-layout-content {
+  background: #fff;
+  padding: 24px;
+  flex-grow: 1;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  margin-bottom: 20px; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Genel font ayarları */
+body, .ant-typography, .ant-menu, .ant-btn, .ant-input, .ant-select, .ant-table, .ant-modal, .calendar-schedule-container, .calendar-section {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Info Cards */
+.info-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.info-card {
+  flex: 1;
+  padding: 16px;
+  background: linear-gradient(135deg, #FFEB3B 0%, #FF9800 100%);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fff;
+}
+
+.info-card h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: inherit;
+}
+
+.info-card p {
+  margin: 8px 0 0;
+  font-size: 1.2rem;
+  color: inherit;
+}
+
+.info-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.info-card:nth-child(1) {
+  background: linear-gradient(135deg, #355e3b 0%, #acb78e 100%);
+}
+
+.info-card:nth-child(2) {
+  background: linear-gradient(135deg, #355e3b 0%, #acb78e 100%);
+}
+
+.info-card:nth-child(3) {
+  background: linear-gradient(135deg, #355e3b 0%, #acb78e 100%);
+}
+
+/* Grafikler */
+.chart-container {
+  padding: 24px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }

@@ -1,0 +1,58 @@
+.navbar {
+  background: #fff;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  max-height: 700px;
+  margin-right: 12px;
+  object-fit: contain;
+}
+
+.right-content {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.bell-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.nav-item {
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.nav-item:hover {
+  background-color: #81A263;
+  transform: scale(1.02);
+}
+
+.avatar-link {
+  transition: transform 0.2s;
+}
+
+.avatar-link:hover {
+  transform: scale(1.1);
+}
+
+.welcome-message {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #365E32;
+}

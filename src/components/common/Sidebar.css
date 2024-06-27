@@ -1,0 +1,49 @@
+.custom-sider {
+  background: linear-gradient(135deg, #FFA500 0%, #fad0c4 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+
+.ant-layout-sider {
+  background: linear-gradient(135deg, #0f402e 0%, #81A263 100%);
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.custom-sider .ant-menu {
+  background: linear-gradient(135deg, #0f402e 0%, #81A263 50%);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border-right: none;
+  
+}
+
+.custom-sider .ant-menu-item {
+  font-size: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  color: #fff; 
+}
+
+.custom-sider .ant-menu-item:hover {
+  background: #81A263;
+}
+
+.custom-sider .ant-menu-item .anticon {
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.custom-sider .ant-menu-item-selected {
+  font-weight: bold;
+  background: #81A263;
+  
+}

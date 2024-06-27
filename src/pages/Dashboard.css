@@ -1,0 +1,119 @@
+.content-container {
+  padding: 24px;
+  background: #fff; /* İçeriğin arka plan rengi */
+  width: 100%; /* İçeriğin tam genişliğini kullan */
+  max-width: 1200px; /* Navbar ile aynı genişlik */
+  margin: 0 auto; /* İçeriği ortala */
+}
+
+/* Genel font boyutunu artırma */
+body {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Navbar ve içerik hizalaması */
+.site-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.ant-layout-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  background: #fff;
+  width: 100%;
+  height: 320px; /* Navbar yüksekliğini artırın */
+  box-sizing: border-box; /* Padding ve border dahil genişliği kontrol et */
+  max-width: 1200px; /* Navbar'ın toplam genişliğini sınırlayın */
+  margin: 0 auto; /* Navbar'ı ortalayın */
+  margin-bottom: 20px;
+}
+
+/* Menü öğeleri ve başlıklar */
+.ant-menu-item, .ant-menu-item a {
+  font-size: 18px;
+}
+
+.ant-list-item-meta-title {
+  font-size: 18px;
+}
+
+.ant-list-item-meta-description {
+  font-size: 16px;
+}
+
+.ant-form-item-label > label {
+  font-size: 16px;
+}
+
+.ant-input, .ant-select-selector, .ant-picker {
+  font-size: 16px;
+}
+
+.ant-btn {
+  font-size: 16px;
+}
+
+.info-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.info-card {
+  flex: 1;
+  padding: 16px;
+  background: linear-gradient(135deg, #FFEB3B 0%, #FF9800 100%); /* Varsayılan gradient */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fff; /* Metin rengini beyaz yap */
+}
+
+.info-card h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: inherit; /* Mevcut renk */
+}
+
+.info-card p {
+  margin: 8px 0 0;
+  font-size: 1.2rem;
+  color: inherit; /* Mevcut renk */
+}
+
+.info-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.info-card:nth-child(1) {
+  background: linear-gradient(135deg, #355e3b 0%, #acb78e 100%);
+}
+
+.info-card:nth-child(2) {
+  background: linear-gradient(135deg, #355e3b 0%, #acb78e 100%);
+}
+
+.info-card:nth-child(3) {
+  background: linear-gradient(135deg, #355e3b 0%, #acb78e 100%);
+}
+
+/* Grafikler için stil */
+.chart-container {
+  padding: 24px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}

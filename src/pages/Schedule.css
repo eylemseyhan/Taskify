@@ -1,0 +1,38 @@
+.schedule-layout {
+  padding: 12px;
+  background: #fff;
+  min-height: 100vh;
+}
+
+.schedule-content {
+  margin-top: 16px;
+}
+
+.schedule-table {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.schedule-table .ant-table {
+  font-family: 'Poppins', sans-serif;
+}
+
+.schedule-table .ant-table-thead > tr > th {
+  background-color: #98c88b;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.schedule-table .ant-table-tbody > tr > td {
+  font-size: 0.9rem;
+  padding: 12px;
+}
+
+.schedule-table .ant-table-tbody > tr:hover > td {
+  background-color: #f0f0f0;
+}
+
+.task-name {
+  font-weight: 600;
+}

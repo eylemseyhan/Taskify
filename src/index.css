@@ -1,13 +1,22 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Ant Design bileşenlerine fontu uygulamak için ek kurallar */
+.ant-typography,
+.calendar-schedule-container
+.calendar-section,
+.ant-menu,
+.ant-btn,
+.ant-input,
+.ant-select,
+.ant-table,
+.schedule-layout,
+.ant-modal {
+  font-family: 'Poppins', sans-serif;
 }

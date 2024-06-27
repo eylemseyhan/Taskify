@@ -1,0 +1,75 @@
+/* Task List Container */
+.task-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background: #ffffff;
+}
+
+.ant-list {
+  width: 100%;
+  max-width: 600px;
+}
+
+.ant-list-item {
+  display: flex;
+  justify-content: center;
+}
+
+.ant-card {
+  width: 100%;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+.ant-card-head-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.ant-card-body p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Task Card Animations */
+.task-card-enter {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.task-card-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.task-card-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.task-card-exit-active {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.task-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.task-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-link {
+  transition: color 0.2s;
+}
+
+.button-link:hover {
+  color: #1890ff;
+}

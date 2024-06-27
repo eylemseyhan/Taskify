@@ -1,38 +1,54 @@
 {
-  "name": "planner",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+    "name": "planner",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@ant-design/cssinjs": "^1.20.0",
+        "@ant-design/icons": "^5.3.7",
+        "@craco/craco": "^7.1.0",
+        "@dotlottie/react-player": "^1.6.19",
+        "@testing-library/jest-dom": "^5.17.0",
+        "@testing-library/react": "^13.4.0",
+        "@testing-library/user-event": "^13.5.0",
+        "antd": "^5.18.1",
+        "axios": "^1.7.2",
+        "craco-less": "^3.0.1",
+        "date-fns": "^3.6.0",
+        "dayjs": "^1.11.11",
+        "firebase": "^10.12.2",
+        "less": "^4.2.0",
+        "lottie-react": "^2.4.0",
+        "react": "^18.3.1",
+        "react-big-calendar": "^1.13.0",
+        "react-dom": "^18.3.1",
+        "react-router-dom": "^6.23.1",
+        "react-scripts": "5.0.1",
+        "react-scroll": "^1.9.0",
+        "react-transition-group": "^4.4.5",
+        "web-vitals": "^2.1.4"
+    },
+    "scripts": {
+        "start": "craco start",
+        "build": "craco build",
+        "test": "craco test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
 }

@@ -1,0 +1,17 @@
+.login-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .login-form-button {
+    width: 100%;
+  }
+  
+  .login-form a {
+    color: #658147; /* Primary renk */
+  }
+  
+  .login-form a:hover {
+    color: #40a9ff; /* Hover için daha açık bir mavi */
+  }
+  

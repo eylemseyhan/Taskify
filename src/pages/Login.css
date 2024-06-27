@@ -1,0 +1,60 @@
+.login-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #F0F2F5 0%, #E7EAF6 100%);
+}
+
+.login-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff; /* Beyaz arka plan rengi */
+  border-radius: 15px; /* Köşeleri yumuşatmak için */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge ekleyin */
+  padding: 50px; /* İç kenar boşlukları */
+  
+  max-width: 1000px; /* Beyaz kutunun maksimum genişliğini belirleyin */
+  width: 100%; /* Beyaz kutunun genişliğini belirleyin */
+  margin: 20px; /* Dış kenarlardan biraz boşluk bırakın */
+  position: relative; /* Position relative to contain the animation */
+}
+
+.login-form-container {
+  text-align: center;
+  max-width: 400px; /* Formun maksimum genişliğini belirleyin */
+  margin-right: 20px; /* Formu biraz sağa yerleştirin */
+  flex-grow: 1; /* Formun alanını genişletin */
+}
+
+.dotlottie-container {
+  width: 400px; /* Animasyonun genişliğini ayarlayın */
+  height: 400px; /* Animasyonun yüksekliğini ayarlayın */
+  pointer-events: none;
+  position: absolute;
+  right: 200px; /* Animasyonu sağa doğru kaydırın */
+  top: 50%;
+  transform: translateY(-50%); /* Animasyonu dikey olarak ortalayın */
+}
+
+.dotlottie-container .animation {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.login-title {
+  font-size: 2.5rem; /* Başlık font boyutunu ayarlayın */
+}
+.back-button {
+  font-size: 18px; /* Daha büyük font boyutu */
+  font-weight: bold; /* Kalın yazı */
+  color: black; /* Yazı rengini siyah yap */
+
+  padding: 10px 20px; /* İç boşluk ekleyin */
+ 
+}
+
+
+
