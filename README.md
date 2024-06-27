@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+**### Taskify**
+_Taskify, kullanıcıların görevleri yönetmesine ve takip etmesine yardımcı olan bir görev yönetim uygulamasıdır. Bu uygulama, kullanıcıların görev eklemelerini, düzenlemelerini, silmelerini ve görevleri listelemelerini sağlar. Ayrıca, her görev için atanmış kullanıcıları, tarih aralığını ve alt görevleri yönetmek mümkündür._
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Ekran görüntüsü 2024-06-27 121329](https://github.com/eylemseyhan/Taskify/assets/99998017/a05a55a5-110f-4e5c-955c-46679e760997)
+![Ekran görüntüsü 2024-06-27 121336](https://github.com/eylemseyhan/Taskify/assets/99998017/81bc251e-74c8-4213-9b20-b5c06b13d02d)
+![Ekran görüntüsü 2024-06-27 121342](https://github.com/eylemseyhan/Taskify/assets/99998017/0493e139-3acd-45c1-836b-ae277154cd6f)
+![Ekran görüntüsü 2024-06-27 121405](https://github.com/eylemseyhan/Taskify/assets/99998017/04fdda8c-f25c-4066-ae50-fe29c259a2a5)
+![Ekran görüntüsü 2024-06-27 121412](https://github.com/eylemseyhan/Taskify/assets/99998017/e9ef95a4-f13a-4787-806a-a2a6094fa15c)
+![Ekran görüntüsü 2024-06-27 121416](https://github.com/eylemseyhan/Taskify/assets/99998017/b99b511e-56ab-4d22-99a5-4121eceb766e)
+![Ekran görüntüsü 2024-06-27 121436](https://github.com/eylemseyhan/Taskify/assets/99998017/efbf7d5d-f58d-4ed3-916c-1dc8b2e4d3db)
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**### Özellikler**
+Görev ekleme, düzenleme ve silme
+Kullanıcıları görevlere atama
+Görevler için tarih aralığı belirleme
+Alt görevler ekleme ve yönetme
+Görev durumu yönetimi (Beklemede, Tamamlandı, Devam Ediyor)
+Kullanıcı bildirimleri
+**### Kurulum**
+Bu proje, React ve Firebase kullanılarak geliştirilmiştir. Projeyi çalıştırmak için aşağıdaki adımları izleyin:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**### Gereksinimler**
+Node.js
+Firebase hesabı ve proje yapılandırması
