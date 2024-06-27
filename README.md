@@ -1,4 +1,4 @@
-**## Taskify**
+** Taskify**
 _Taskify, kullanıcıların görevleri yönetmesine ve takip etmesine yardımcı olan bir görev yönetim uygulamasıdır. Bu uygulama, kullanıcıların görev eklemelerini, düzenlemelerini, silmelerini ve görevleri listelemelerini sağlar. Ayrıca, her görev için atanmış kullanıcıları, tarih aralığını ve alt görevleri yönetmek mümkündür._
 
 ![Ekran görüntüsü 2024-06-27 121329](https://github.com/eylemseyhan/Taskify/assets/99998017/a05a55a5-110f-4e5c-955c-46679e760997)
@@ -12,16 +12,16 @@ _Taskify, kullanıcıların görevleri yönetmesine ve takip etmesine yardımcı
 
 
 
-**### Özellikler**
+**Özellikler**
 Görev ekleme, düzenleme ve silme
 Kullanıcıları görevlere atama
 Görevler için tarih aralığı belirleme
 Alt görevler ekleme ve yönetme
 Görev durumu yönetimi (Beklemede, Tamamlandı, Devam Ediyor)
 Kullanıcı bildirimleri
-**### Kurulum**
+**Kurulum**
 Bu proje, React ve Firebase kullanılarak geliştirilmiştir. Projeyi çalıştırmak için aşağıdaki adımları izleyin:
 
-**### Gereksinimler**
+**Gereksinimler**
 Node.js
 Firebase hesabı ve proje yapılandırması
