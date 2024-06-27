@@ -19,9 +19,7 @@ Görevler için tarih aralığı belirleme
 Alt görevler ekleme ve yönetme
 Görev durumu yönetimi (Beklemede, Tamamlandı, Devam Ediyor)
 Kullanıcı bildirimleri
-**Kurulum**
-Bu proje, React ve Firebase kullanılarak geliştirilmiştir. Projeyi çalıştırmak için aşağıdaki adımları izleyin:
 
-**Gereksinimler**
-Node.js
-Firebase hesabı ve proje yapılandırması
+**Teknolojiler**
+React
+Firebase
