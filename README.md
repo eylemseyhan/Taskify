@@ -12,6 +12,12 @@ _Taskify, kullanıcıların görevleri yönetmesine ve takip etmesine yardımcı
 ![Ekran görüntüsü 2024-06-27 121416](https://github.com/eylemseyhan/Taskify/assets/99998017/b99b511e-56ab-4d22-99a5-4121eceb766e)
 ![Ekran görüntüsü 2024-06-27 121436](https://github.com/eylemseyhan/Taskify/assets/99998017/efbf7d5d-f58d-4ed3-916c-1dc8b2e4d3db)
 
+
+## Taskify için hazırlanmış sunum
+
+
+[TASKIFY SUNUM.pdf](https://github.com/user-attachments/files/16181705/TASKIFY.SUNUM.pdf)
+
 ## Özellikler
 
 - Görev ekleme, düzenleme ve silme
