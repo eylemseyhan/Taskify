@@ -2,7 +2,7 @@
 
 _Taskify is a task management application that helps users manage and track their tasks. This application allows users to add, edit, delete, and list tasks. Additionally, it is possible to manage assigned users, date ranges, and subtasks for each task._
 
-## Ekran Görüntüleri
+## Screenshots
 
 ![Ekran görüntüsü 2024-06-27 121329](https://github.com/eylemseyhan/Taskify/assets/99998017/a05a55a5-110f-4e5c-955c-46679e760997)
 ![Ekran görüntüsü 2024-06-27 121336](https://github.com/eylemseyhan/Taskify/assets/99998017/81bc251e-74c8-4213-9b20-b5c06b13d02d)
