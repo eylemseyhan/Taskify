@@ -4,13 +4,13 @@ import 'firebase/compat/auth';
 
 // Firebase yapılandırma nesnesi
 const firebaseConfig = {
-    apiKey: "AIzaSyAQB2QvoXRcJ2N2ffqhG62iXo6H6AFWd78",
-    authDomain: "planner-7c4eb.firebaseapp.com",
-    projectId: "planner-7c4eb",
-    storageBucket: "planner-7c4eb",
-    messagingSenderId: "648960895549",
-    appId: "1:648960895549:web:70236fa7ea71a7451f5854",
-    measurementId: "G-WTCLLTBTX1"
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_FIREBASE_APP_ID,
+    measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
 };
 
 firebase.initializeApp(firebaseConfig);
