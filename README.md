@@ -1,8 +1,8 @@
 # Taskify
 
-_Taskify, kullanıcıların görevleri yönetmesine ve takip etmesine yardımcı olan bir görev yönetim uygulamasıdır. Bu uygulama, kullanıcıların görev eklemelerini, düzenlemelerini, silmelerini ve görevleri listelemelerini sağlar. Ayrıca, her görev için atanmış kullanıcıları, tarih aralığını ve alt görevleri yönetmek mümkündür._
+_Taskify is a task management application that helps users manage and track their tasks. This application allows users to add, edit, delete, and list tasks. Additionally, it is possible to manage assigned users, date ranges, and subtasks for each task._
 
-## Ekran Görüntüleri
+## Screenshots
 
 ![Ekran görüntüsü 2024-06-27 121329](https://github.com/eylemseyhan/Taskify/assets/99998017/a05a55a5-110f-4e5c-955c-46679e760997)
 ![Ekran görüntüsü 2024-06-27 121336](https://github.com/eylemseyhan/Taskify/assets/99998017/81bc251e-74c8-4213-9b20-b5c06b13d02d)
@@ -13,43 +13,44 @@ _Taskify, kullanıcıların görevleri yönetmesine ve takip etmesine yardımcı
 ![Ekran görüntüsü 2024-06-27 121436](https://github.com/eylemseyhan/Taskify/assets/99998017/efbf7d5d-f58d-4ed3-916c-1dc8b2e4d3db)
 
 
-## Taskify için hazırlanmış sunum
+## Presentation for Taskify
 
 
 [TASKIFY SUNUM.pdf](https://github.com/user-attachments/files/16181705/TASKIFY.SUNUM.pdf)
 
-## Özellikler
+## Features
 
-- Görev ekleme, düzenleme ve silme
-- Kullanıcıları görevlere atama
-- Görevler için tarih aralığı belirleme
-- Alt görevler ekleme ve yönetme
-- Görev durumu yönetimi (Beklemede, Tamamlandı, Devam Ediyor)
-- Kullanıcı bildirimleri
+Add, edit, and delete tasks
+Assign users to tasks
+Set date ranges for tasks
+Add and manage subtasks
+Task status management (Pending, Completed, In Progress)
+User notifications
 
-## Kullanılan Teknolojiler
+## Technologies Used
 
-- React
-- Firebase (Firestore ve Authentication)
-- Ant Design (UI bileşenleri için)
+React
+Firebase (Firestore and Authentication)
+Ant Design (for UI components
 
-## Kurulum ve Kullanım
+## Installation and Usage
 
-1. Bu projeyi klonlayın veya indirin:
+1. Clone or download this project:
     ```sh
     git clone https://github.com/YOUR_GITHUB_USERNAME/Taskify.git
     cd Taskify
     ```
 
-2. Gerekli bağımlılıkları yükleyin:
+2. Install the required dependencies:
     ```sh
     npm install
     ```
 
-3. Firebase projesi oluşturun ve konfigürasyon dosyasını ayarlayın:
-    - [Firebase Console](https://console.firebase.google.com/) üzerinden yeni bir proje oluşturun.
-    - Firestore ve Authentication özelliklerini etkinleştirin.
-    - Firebase projenizin yapılandırma bilgilerini alın ve `src/firebaseConfig.js` dosyasına ekleyin:
+3.Create a Firebase project and set up the configuration file:
+
+Create a new project through the Firebase Console.
+Enable Firestore and Authentication features.
+Obtain your Firebase project configuration and add it to the src/firebaseConfig.js file:
 
     ```javascript
     const firebaseConfig = {
@@ -64,19 +65,19 @@ _Taskify, kullanıcıların görevleri yönetmesine ve takip etmesine yardımcı
     export default firebaseConfig;
     ```
 
-4. Uygulamayı yerel sunucunuzda çalıştırın:
+4. Run the application on your local server:
     ```sh
     npm start
     ```
 
-5. Tarayıcınızda `http://localhost:3000` adresine giderek uygulamayı görüntüleyin.
+5. Open your browser and go to http://localhost:3000 to view the application.
 
 
 
-## Katkıda Bulunma
+## Contributing
 
-Katkıda bulunmak isterseniz, lütfen bir pull request gönderin veya bir issue açın.
+If you would like to contribute, please send a pull request or open an issue.
 
-## Lisans
+## License
 
-Bu proje MIT lisansı altında lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasına bakın.
+This project is licensed under the MIT License. For more information, see the LICENSE file.
