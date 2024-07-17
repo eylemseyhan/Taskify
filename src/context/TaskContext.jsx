@@ -1,25 +1,28 @@
 import React, { createContext, useState, useEffect, useCallback } from 'react';
-import { fetchAllTasksFromFirestore, getUserInfo, auth } from '../firebase';
+import { fetchAllTasksFromFirestore, getUserInfo, auth, saveUserSession, loadUserSession, clearUserSession } from '../firebase';
 
 export const TaskContext = createContext();
 
 export const TaskProvider = ({ children }) => {
   const [tasks, setTasks] = useState([]);
   const [taskNotifications, setTaskNotifications] = useState([]);
-  const [currentUser, setCurrentUser] = useState(null);
+  const [currentUser, setCurrentUser] = useState(loadUserSession()); // Oturum bilgilerini yükle
 
   const loadTasks = useCallback(async () => {
-    const tasksList = await fetchAllTasksFromFirestore();
-    setTasks(tasksList);
-  }, []);
+    if (currentUser) {
+      const tasksList = await fetchAllTasksFromFirestore();
+      setTasks(tasksList); // Görevleri doğrudan yükle
+    }
+  }, [currentUser]);
 
   useEffect(() => {
     const fetchCurrentUser = async () => {
-      const user = auth.currentUser;
+      const user = auth.currentUser || loadUserSession(); // Oturum bilgilerini yükle
       if (user) {
         const userInfo = await getUserInfo(user.email);
         setCurrentUser(userInfo);
-        loadTasks();  // Kullanıcı bilgisini aldıktan sonra görevleri yükle
+        saveUserSession(userInfo); // Oturum bilgilerini sakla
+        loadTasks(); // Kullanıcı bilgisini aldıktan sonra görevleri yükle
       }
     };
 

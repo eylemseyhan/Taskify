@@ -7,7 +7,7 @@ const firebaseConfig = {
     apiKey: "AIzaSyAQB2QvoXRcJ2N2ffqhG62iXo6H6AFWd78",
     authDomain: "planner-7c4eb.firebaseapp.com",
     projectId: "planner-7c4eb",
-    storageBucket: "planner-7c4eb.appspot.com",
+    storageBucket: "planner-7c4eb",
     messagingSenderId: "648960895549",
     appId: "1:648960895549:web:70236fa7ea71a7451f5854",
     measurementId: "G-WTCLLTBTX1"
@@ -23,7 +23,13 @@ const fetchAllTasksFromFirestore = async() => {
     try {
         const querySnapshot = await firestore.collection('tasks').get();
         querySnapshot.forEach(doc => {
-            tasks.push({...doc.data(), id: doc.id });
+            const data = doc.data();
+            tasks.push({
+                ...data,
+                id: doc.id,
+                startDate: data.startDate.toDate(),
+                endDate: data.endDate.toDate()
+            });
         });
     } catch (error) {
         console.error('Error fetching tasks:', error);
@@ -100,15 +106,26 @@ const deleteTaskFromFirestore = async(taskId) => {
         await firestore.collection('tasks').doc(taskId).delete();
     } catch (error) {
         console.error('Error deleting task:', error);
-        throw new Error('Error deleting task');
     }
+};
+
+export const saveUserSession = (user) => {
+    localStorage.setItem('user', JSON.stringify(user));
+};
+
+export const loadUserSession = () => {
+    const user = localStorage.getItem('user');
+    return user ? JSON.parse(user) : null;
+};
+
+export const clearUserSession = () => {
+    localStorage.removeItem('user');
 };
 
 export {
     auth,
     firestore,
     fetchAllTasksFromFirestore,
-
     getUsers,
     addTaskToFirestore,
     updateTaskInFirestore,

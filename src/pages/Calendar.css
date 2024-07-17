@@ -1,68 +1,63 @@
-.calendar-container {
-  padding: 20px;
-  background-color: #fff;
+.fc-toolbar.fc-header-toolbar {
+  background: #508D4E; 
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.rbc-calendar {
-  background: #fff;
-}
-
-.rbc-toolbar {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-
-.rbc-toolbar button {
-  color: black;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.rbc-toolbar button:hover {
-  background: #45a049;
-}
-
-.rbc-event {
-  background-color: #98c88b;
+.fc .fc-toolbar-title {
   color: white;
-  padding: 5px;
-  border-radius: 4px;
-  cursor: pointer;
 }
 
-.rbc-event:hover {
-  background-color: #b2c0b2;
+.fc .fc-button {
+  background-color: transparent !important; 
+  color: white; 
+  background: none; 
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 
-.rbc-today {
-  background: #eafaf1;
+.fc .fc-button:hover {
+  color: darkgreen !important; 
 }
 
-.rbc-off-range-bg {
-  background: #f7f7f7;
+.fc .fc-button.fc-button-active {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important; 
 }
 
-.rbc-time-gutter, .rbc-time-header-cell, .rbc-day-slot {
-  display: none;
+.fc-event, .fc-event-dot {
+  background-color: green; 
+  border-color: green; 
 }
 
-.rbc-month-view {
-  font-size: 1.2rem;
+.fc-event-time, .fc-event-title {
+  color: white; 
 }
 
-.rbc-header {
-  font-size: 1.5rem;
+
+.fc td, .fc th {
+  border-color: #d1d1d1 !important; 
 }
 
-.rbc-toolbar-label {
-  font-size: 2rem;
+.fc .fc-timegrid-axis-cushion {
+  color: black !important; 
 }
 
-.rbc-toolbar button {
-  font-size: 1rem;
+.fc .fc-daygrid-day-number, .fc .fc-timegrid-slot-label {
+  color: black !important; 
+}
+
+.fc-theme-standard .fc-scrollgrid {
+  border: none; 
+}
+
+
+.fc-col-header-cell-cushion {
+  color: green !important; 
 }

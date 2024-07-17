@@ -1,14 +1,10 @@
 import React, { useContext, useEffect } from 'react';
-import { Calendar, momentLocalizer, Views } from 'react-big-calendar';
-import moment from 'moment';
-import 'moment/locale/tr';  // Türkçe yerelleştirme
+import FullCalendar from '@fullcalendar/react';
+import dayGridPlugin from '@fullcalendar/daygrid';
+import timeGridPlugin from '@fullcalendar/timegrid';
+import interactionPlugin from '@fullcalendar/interaction';
 import { TaskContext } from '../context/TaskContext';
-import 'react-big-calendar/lib/css/react-big-calendar.css';
-import './Calendar.css';
-
-moment.locale('tr');  // moment kütüphanesini Türkçe olarak ayarlayın
-
-const localizer = momentLocalizer(moment);
+import './Calendar.css'; // CSS dosyasını içe aktar
 
 const TaskCalendar = () => {
   const { tasks, loadTasks } = useContext(TaskContext);
@@ -19,48 +15,33 @@ const TaskCalendar = () => {
 
   const events = tasks.map(task => ({
     title: task.name,
-    start: new Date(task.startDate),
-    end: new Date(task.endDate),
-    desc: task.description,
+    start: task.startDate,
+    end: task.endDate,
+    description: task.description
   }));
 
   return (
-    <div className="calendar-container">
-      <Calendar
-        localizer={localizer}
-        events={events}
-        startAccessor="start"
-        endAccessor="end"
-        style={{ height: 500 }}
-        views={{ month: true, week: true }}
-        defaultView={Views.MONTH}
-        popup={true}
-        toolbar={true}
-        messages={{
-          allDay: 'Tüm gün',
-          previous: 'Geri',
-          next: 'İleri',
-          today: 'Bugün',
-          month: 'Ay',
-          week: 'Hafta',
-          day: 'Gün',
-          agenda: 'Ajanda',
-          date: 'Tarih',
-          time: 'Zaman',
-          event: 'Etkinlik',
-          noEventsInRange: 'Bu aralıkta etkinlik yok.',
-          showMore: total => `+${total} daha fazla`
-        }}
-        components={{
-          event: ({ event }) => (
-            <span>
-              <strong>{event.title}</strong>
-              {event.desc && ': ' + event.desc}
-            </span>
-          )
-        }}
-      />
-    </div>
+    <FullCalendar
+      plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
+      initialView="timeGridWeek" 
+      headerToolbar={{
+        left: 'prev,next today',
+        center: 'title',
+        right: 'dayGridMonth,timeGridWeek,timeGridDay'
+      }}
+      events={events}
+      locale="tr" 
+      nowIndicator={true} 
+      businessHours={{ 
+        daysOfWeek: [1, 2, 3, 4, 5, 6 ,7], 
+        startTime: '00:00', 
+        endTime: '24:00',
+      }}
+      slotMinTime="00:00:00"
+      slotMaxTime="24:00:00" 
+      eventTimeFormat={{ hour: '2-digit', minute: '2-digit', hour12: false }} 
+      now={new Date().toISOString()} 
+    />
   );
 };
 

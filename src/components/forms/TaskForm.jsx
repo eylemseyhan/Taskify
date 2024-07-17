@@ -3,6 +3,8 @@ import { Modal, Form, Input, DatePicker, Select, Button, message } from 'antd';
 import { MinusCircleOutlined, PlusOutlined } from '@ant-design/icons';
 import dayjs from 'dayjs';
 import { getUsers } from '../../firebase';
+import 'moment/locale/tr'; // Türkçe yerelleştirme
+import trLocale from 'antd/es/date-picker/locale/tr_TR'; // Ant Design DatePicker için Türkçe yerelleştirme
 
 const { RangePicker } = DatePicker;
 const { Option } = Select;
@@ -52,8 +54,8 @@ const TaskForm = ({ open, onCancel, onSubmit, isEditing, task }) => {
     const taskData = {
       name: values.name || '',
       description: values.description || '',
-      startDate: values.dates ? values.dates[0].format('YYYY-MM-DD') : '',
-      endDate: values.dates ? values.dates[1].format('YYYY-MM-DD') : '',
+      startDate: values.dates ? values.dates[0].toISOString() : '',
+      endDate: values.dates ? values.dates[1].toISOString() : '',
       assignees: assigneesEmails.join(', '),
       subtasks: values.subtasks || [], // Alt görevler dizi olarak kaydediliyor
       status: values.status || 'Beklemede'
@@ -108,7 +110,17 @@ const TaskForm = ({ open, onCancel, onSubmit, isEditing, task }) => {
           label="Tarih Aralığı"
           rules={[{ required: true, message: 'Lütfen tarih aralığını seçin' }]}
         >
-          <RangePicker />
+          <RangePicker
+            showTime={{ format: 'HH:mm' }} // Saat seçme özelliği ekleme
+            format="YYYY-MM-DD HH:mm" // Tarih ve saat formatı
+            locale={{
+              ...trLocale,
+              lang: {
+                ...trLocale.lang,
+                ok: 'Seç', // OK düğme metnini "Seç" olarak değiştir
+              },
+            }} // Yerel ayarı Türkçe yap ve OK metnini değiştir
+          />
         </Form.Item>
         <Form.Item
           name="assignees"

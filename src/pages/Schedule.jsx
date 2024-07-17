@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { Table, Layout } from 'antd';
+import { Table, Layout, Empty } from 'antd';
 import { TaskContext } from '../context/TaskContext';
 import { getUsers } from '../firebase';
 import './Schedule.css';
@@ -66,6 +66,13 @@ const Schedule = () => {
           pagination={false}
           bordered
           className="schedule-table"
+          locale={{
+            emptyText: (
+              <Empty
+                description="Henüz planlanmış görev yok"
+              />
+            ),
+          }}
         />
       </Content>
     </Layout>
